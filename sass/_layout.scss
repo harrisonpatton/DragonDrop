@@ -1,0 +1,130 @@
+.header{
+    color: black;
+    padding: 2rem;
+    padding-top: 4rem;
+    font-size: 4.5rem;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+.full__content{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin-left: 25%;
+
+    @media screen and (max-width: 37.5em){
+        width: auto;
+        margin-left: 0;
+        margin-top: 4rem;
+    }
+}
+
+.content{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    @media screen and (max-width: 37.5em){
+        order: 2;
+    }
+
+    &__header{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+
+        @media screen and (max-width: 37.5em){
+            visibility: hidden;
+            position: absolute;
+        }
+    }
+
+    &__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__body-employee{
+        padding: 5rem;
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 37.5em){
+            flex-direction: column;
+            padding: 3rem;
+        }
+
+        &--text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+
+    &__photo{
+        height: 16rem;
+        width: 16rem;
+        border-radius: 50%;
+        object-fit: cover;
+
+        @media screen and (max-width: 37.5em){
+            margin-bottom: 3rem;
+        }
+
+    }
+}
+
+
+
+.team-heading{
+    text-decoration: underline;
+    font-size: 1.7rem;
+    letter-spacing: .1rem;
+
+    @media screen and (max-width: 37.5em){
+        text-decoration: none;
+        font-size: 4.5rem;
+        font-family: 'Nunito', sans-serif;
+        margin-top: 2.5rem;
+    }
+}
+
+.team-text{
+    width: 80%;
+}
+
+.paragraph{
+    font-size: 1.4rem;
+}
+
+.about{
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__photo{
+        width: 55rem;
+        height: 30rem;
+    }
+
+    &__text{
+        width: 60%;
+
+        @media screen and (max-width: 37.5em){
+            width:75%;
+        }
+    }
+}
+
+.img{
+    &__container{
+        padding: 3rem;
+    }
+}
+

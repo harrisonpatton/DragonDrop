@@ -1,0 +1,29 @@
+.container{
+    background-color: #6FCF97;
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+
+
+
+.logo{
+    height: 8rem;
+    width: 16rem;
+    top: 4rem;
+    left: 4rem;
+
+    &__box{
+        padding: 2rem;
+        margin-bottom: 2rem;
+
+        @media screen and (max-width:37.5em){
+            opacity: 0;
+            width: 0;
+            position: absolute;
+        }
+        
+    }
+}
+
