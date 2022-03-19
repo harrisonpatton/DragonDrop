@@ -1,0 +1,34 @@
+.container{
+    background-color: #6FCF97;
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+.header{
+    color: black;
+    padding: 2rem;
+    padding-top: 4rem;
+    font-size: 4.5rem;
+    font-family: 'Nunito', sans-serif;
+
+    @media screen and (max-width: 56.25em){
+        font-size: 7rem;
+    }
+}
+
+.full__content{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin-left: 25%;
+
+    @media screen and (max-width: 56.25em){
+        width: auto;
+        margin-left: 0;
+        margin-top: 4rem;
+    }
+}
+
+
+
