@@ -17,7 +17,7 @@
         text-align: center;
         border-radius: 50%;
 
-        @include respond(phone){
+        @include respond(tab-port){
             top: 3rem;
             right: 3rem;
             visibility: visible;
@@ -34,8 +34,8 @@
             background-color: #6FCF97;
             width: 25%;
             position: fixed;
-    
-            @media screen and (max-width:37.5em){
+            
+            @include respond(tab-port){
                 opacity: 0;
                 width: 0;
                 display: flex;
@@ -54,7 +54,13 @@
             font-size: 3rem;  
             position: relative;  
 
-            @media screen and (max-width:37.5em){
+            @include respond(tab-port){
+                padding: 2.6rem .4rem;
+                font-size: 4.5rem;
+                letter-spacing: .4rem;
+            }
+
+            @include respond(phone){
                 padding: 2.6rem .4rem;
                 font-size: 4rem;
             }
@@ -96,7 +102,7 @@
 
         //FUNCTIONALITY
         &__checkbox:checked ~ &__container{
-            @media screen and (max-width: 37.5em){
+            @include respond(tab-port){
                 opacity: 1;
                 height: 80vh;
                 width: 60vw;
@@ -104,7 +110,6 @@
                 margin: 0;
                 margin-top: -1rem;
                 margin-left: 42%;
-
             }
         }
 
