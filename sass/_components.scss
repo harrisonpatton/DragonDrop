@@ -18,7 +18,9 @@
 }
 
 .heading-secondary{
-    font-size: 2.2rem;
+    font-size: 2.7rem;
+    font-weight: 300;
+    letter-spacing: .25rem;
 }
 
 
@@ -49,10 +51,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        &--contact{
-
-        }
 
     }
 
@@ -91,8 +89,9 @@
 
 .team-heading{
     text-decoration: underline;
-    font-size: 1.7rem;
-    letter-spacing: .1rem;
+    font-size: 2.7rem;
+    font-weight: 300;
+    letter-spacing: .25rem;
 
     @media screen and (max-width: 56.25em){
         text-decoration: none;
@@ -107,7 +106,9 @@
 }
 
 .paragraph{
-    font-size: 1.4rem;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    font-weight: 300;
 }
 
 .about{
@@ -175,7 +176,9 @@
     }
 
     &__label{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+        font-weight: 300;
         padding-bottom: .8rem;
+        letter-spacing: .1rem;
     }
 }
