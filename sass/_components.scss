@@ -44,6 +44,11 @@
 
         &--contact{
             margin-bottom: 0;
+
+            @media screen and (max-width: 37.5em){
+                visibility: visible;
+                position: relative;
+            }
         }
     }
 
@@ -51,6 +56,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        &--contact{
+            @media screen and (max-width: 37.5em){
+                width: auto;
+            }
+        }
 
     }
 
@@ -152,6 +163,34 @@
         text-align: left;
         display: flex;
         padding-bottom: 0;
+        
+        @media screen and (max-width:37.5em){
+            flex-direction: column;
+        }
+    }
+
+    &__button{
+        display: flex;
+        justify-content: center;
+
+        &--btn{
+            padding: 1.5rem 2.5rem;
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.8rem;
+            background-color: #2f80ed;
+            border: none;
+            margin-bottom: 2rem;
+            transition: all .2s;
+
+            &:hover{
+                cursor: pointer;
+                transform: translateY(-3px);
+            }
+
+            &:active{
+                transform: translateY(3px);
+            }
+        }
     }
 }
 

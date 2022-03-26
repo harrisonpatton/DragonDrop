@@ -56,10 +56,17 @@ body {
         position: absolute; } }
     .content__header--contact {
       margin-bottom: 0; }
+      @media screen and (max-width: 37.5em) {
+        .content__header--contact {
+          visibility: visible;
+          position: relative; } }
   .content__body {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media screen and (max-width: 37.5em) {
+      .content__body--contact {
+        width: auto; } }
   .content__body-employee {
     padding: 5rem;
     display: flex;
@@ -128,6 +135,26 @@ body {
   text-align: left;
   display: flex;
   padding-bottom: 0; }
+  @media screen and (max-width: 37.5em) {
+    .contact__form {
+      flex-direction: column; } }
+
+.contact__button {
+  display: flex;
+  justify-content: center; }
+  .contact__button--btn {
+    padding: 1.5rem 2.5rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.8rem;
+    background-color: #2f80ed;
+    border: none;
+    margin-bottom: 2rem;
+    transition: all .2s; }
+    .contact__button--btn:hover {
+      cursor: pointer;
+      transform: translateY(-3px); }
+    .contact__button--btn:active {
+      transform: translateY(3px); }
 
 .form {
   display: flex;
@@ -173,8 +200,7 @@ body {
   @media screen and (max-width: 56.25em) {
     .full__content {
       width: auto;
-      margin-left: 0;
-      margin-top: 4rem; } }
+      margin: auto; } }
 
 .navigation__checkbox {
   display: none;
@@ -188,7 +214,7 @@ body {
   top: 6rem;
   right: 6rem;
   position: fixed;
-  z-index: 200;
+  z-index: 600;
   text-align: center;
   border-radius: 50%; }
   @media (max-width: 56.25em) {
@@ -258,6 +284,9 @@ body {
   text-decoration: none;
   color: black;
   transition: all .2s; }
+  @media (max-width: 56.25em) {
+    .navigation__link, .navigation:link, .navigation:visited {
+      color: #fff; } }
 
 @media (max-width: 56.25em) {
   .navigation__checkbox:checked ~ .navigation__container {
@@ -267,12 +296,16 @@ body {
     background-color: black;
     margin: 0;
     margin-top: -1rem;
-    margin-left: 62%; } }
+    margin-left: 62%;
+    z-index: 200; } }
 
 @media (max-width: 37.5em) {
   .navigation__checkbox:checked ~ .navigation__container {
-    width: 50vw;
-    margin-left: 51%; } }
+    width: 50vw; } }
+
+@media (max-width: 37.5em) {
+  .navigation__checkbox:checked ~ .navigation__container--about {
+    margin-left: 50%; } }
 
 .navigation__icon {
   position: relative;
@@ -281,7 +314,8 @@ body {
     width: 3rem;
     height: 3px;
     background-color: black;
-    display: inline-block; }
+    display: inline-block;
+    z-index: 600; }
     @media (max-width: 56.25em) {
       .navigation__icon, .navigation__icon::before, .navigation__icon::after {
         width: 3.7rem;
