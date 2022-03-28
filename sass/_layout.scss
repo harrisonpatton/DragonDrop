@@ -26,8 +26,12 @@
     margin-left: 25%;
 
     @media screen and (max-width: 56.25em){
-        width: auto;
         margin: auto;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 37.5em){
+        width: 90%;
     }
 }
 
