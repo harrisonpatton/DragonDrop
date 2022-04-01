@@ -35,5 +35,15 @@
     }
 }
 
+.row{
+    display: flex;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+    }
+}
 
 

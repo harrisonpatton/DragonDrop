@@ -192,6 +192,22 @@ body {
     padding-bottom: .8rem;
     letter-spacing: .1rem; }
 
+.offerings__img {
+  height: 70%;
+  width: 70%; }
+
+.u-margin-small {
+  margin-bottom: 2rem; }
+
+.u-margin-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-big {
+  margin-bottom: 6rem; }
+
+.u-margin-huge {
+  margin-bottom: 8rem; }
+
 .container {
   background-color: #6FCF97;
   height: 100vh;
@@ -223,6 +239,14 @@ body {
     .full__content {
       width: 90%; } }
 
+.row {
+  display: flex; }
+  .row__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; }
+
 .navigation__checkbox {
   display: none;
   width: 0; }
@@ -251,7 +275,7 @@ body {
   margin: 0 2rem;
   margin-left: 4rem;
   margin-top: 4rem;
-  background-color: #6FCF97;
+  background-color: transparent;
   width: 25%;
   position: fixed; }
   @media (max-width: 56.25em) {
