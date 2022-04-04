@@ -18,7 +18,9 @@
 }
 
 .heading-secondary{
-    font-size: 2.2rem;
+    font-size: 2.7rem;
+    font-weight: 300;
+    letter-spacing: .25rem;
 }
 
 
@@ -35,13 +37,11 @@
         justify-content: center;
         margin-bottom: 5rem;
 
-        @media screen and (max-width: 37.5em){
-            visibility: hidden;
-            position: absolute;
-        }
-
-        &--contact{
-            margin-bottom: 0;
+        &--about{
+            @media screen and (max-width: 37.5em){
+                visibility: hidden;
+                position: absolute;
+            }
         }
     }
 
@@ -51,7 +51,9 @@
         align-items: center;
 
         &--contact{
-
+            @media screen and (max-width: 37.5em){
+                width: auto;
+            }
         }
 
     }
@@ -91,8 +93,9 @@
 
 .team-heading{
     text-decoration: underline;
-    font-size: 1.7rem;
-    letter-spacing: .1rem;
+    font-size: 2.7rem;
+    font-weight: 300;
+    letter-spacing: .25rem;
 
     @media screen and (max-width: 56.25em){
         text-decoration: none;
@@ -107,7 +110,9 @@
 }
 
 .paragraph{
-    font-size: 1.4rem;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    font-weight: 300;
 }
 
 .about{
@@ -151,6 +156,35 @@
         text-align: left;
         display: flex;
         padding-bottom: 0;
+        
+        @media screen and (max-width:37.5em){
+            flex-direction: column;
+        }
+    }
+
+    &__button{
+        display: flex;
+        justify-content: center;
+
+        &--btn{
+            padding: 1.5rem 2.5rem;
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.8rem;
+            background-color: #2f80ed;
+            border: none;
+            margin-bottom: 2rem;
+            transition: all .2s;
+            color: #fff;
+
+            &:hover{
+                cursor: pointer;
+                transform: translateY(-3px);
+            }
+
+            &:active{
+                transform: translateY(3px);
+            }
+        }
     }
 }
 
@@ -158,24 +192,58 @@
 
     display: flex;
     flex-direction: column;
+    width: 80%;
+
+    @media screen and (max-width: 56.25em){
+        width: 100%;
+    }
 
     &__group{
         padding: 2rem 3rem;
         display: flex;
         flex-direction: column;
+        width: 100%;
+
+        &--message{
+            @media screen and (max-width:37.5em){
+                padding-top: 0;
+            }
+        }
     }
 
     &__input{
-        padding: .8rem 8rem;
+        height: 4rem;
         order: 2;
+        text-indent: 0px;
+        text-align: start;
+        cursor: text;
+        font-size: 2rem;
+        text-indent: 3px;
 
         &--message{
-            padding: 4rem 26.5rem;
+            padding: 0 0 8rem 0;
+            font-family: inherit;
+            cursor: text;
+
+            @media screen and (max-width:37.5em){
+                margin-bottom: 1rem;
+            }
         }
     }
 
     &__label{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+        font-weight: 300;
         padding-bottom: .8rem;
+        letter-spacing: .1rem;
+    }
+}
+
+//OFFERINGS
+
+.offerings{
+    &__img{
+        height: 70%;
+        width: 70%;
     }
 }
