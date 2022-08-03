@@ -1,255 +1,258 @@
-.logo{
-    height: 8rem;
-    width: 16rem;
-    top: 4rem;
-    left: 4rem;
+.logo {
+  width: 25%;
+  color: black;
+  padding-top: 4rem;
+  font-size: 5.5rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  margin-left: 12%;
 
-    &__box{
-        padding: 2rem;
-        margin-bottom: 2rem;
+  &__box {
+    padding: 2rem;
+    margin-bottom: 2rem;
 
-        @media screen and (max-width:56.25em){
-            opacity: 0;
-            width: 0;
-            position: absolute;
-        }
-        
+    @media screen and (max-width: 56.25em) {
+      opacity: 0;
+      width: 0;
+      position: absolute;
     }
+  }
 }
 
-.heading-secondary{
-    font-size: 2.7rem;
-    font-weight: 300;
-    letter-spacing: .25rem;
+//Social Icons
+
+.icon {
+  display: inline-block;
+  width: 2rem;
+  stroke-width: 0;
+  stroke: currentColor;
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
 }
 
+.heading-secondary {
+  font-size: 2.7rem;
+  font-weight: 300;
+  letter-spacing: 0.25rem;
+}
 
-.content{
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  @media screen and (max-width: 37.5em) {
+    order: 2;
+  }
+
+  &__header {
     display: flex;
-    flex: 1;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    background-color: #6fcf97;
+
+    &--about {
+      @media screen and (max-width: 37.5em) {
+        visibility: hidden;
+        position: absolute;
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
     flex-direction: column;
-    @media screen and (max-width: 37.5em){
-        order: 2;
+    align-items: center;
+
+    &--contact {
+      @media screen and (max-width: 37.5em) {
+        width: auto;
+      }
+    }
+  }
+
+  &__body-employee {
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 37.5em) {
+      flex-direction: column;
+      padding: 3rem;
     }
 
-    &__header{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 5rem;
-
-        @media screen and (max-width: 37.5em){
-            visibility: hidden;
-            position: absolute;
-        }
-
-        &--contact{
-            margin-bottom: 0;
-
-            @media screen and (max-width: 37.5em){
-                visibility: visible;
-                position: relative;
-            }
-        }
+    &--text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: "Roboto", sans-serif;
     }
+  }
 
-    &__body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  &__photo {
+    height: 16rem;
+    width: 16rem;
+    border-radius: 50%;
+    object-fit: cover;
 
-        &--contact{
-            @media screen and (max-width: 37.5em){
-                width: auto;
-            }
-        }
-
+    @media screen and (max-width: 37.5em) {
+      margin-bottom: 3rem;
     }
-
-    &__body-employee{
-        padding: 5rem;
-        display: flex;
-        align-items: center;
-
-        @media screen and (max-width: 37.5em){
-            flex-direction: column;
-            padding: 3rem;
-        }
-
-        &--text{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-family: 'Roboto', sans-serif;
-        }
-    }
-
-    &__photo{
-        height: 16rem;
-        width: 16rem;
-        border-radius: 50%;
-        object-fit: cover;
-
-        @media screen and (max-width: 37.5em){
-            margin-bottom: 3rem;
-        }
-
-    }
+  }
 }
 
+.team-heading {
+  text-decoration: underline;
+  font-size: 2.7rem;
+  font-weight: 300;
+  letter-spacing: 0.25rem;
 
-
-.team-heading{
-    text-decoration: underline;
-    font-size: 2.7rem;
-    font-weight: 300;
-    letter-spacing: .25rem;
-
-    @media screen and (max-width: 56.25em){
-        text-decoration: none;
-        font-size: 4.5rem;
-        font-family: 'Nunito', sans-serif;
-        margin-top: 2.5rem;
-    }
+  @media screen and (max-width: 56.25em) {
+    text-decoration: none;
+    font-size: 4.5rem;
+    font-family: "Nunito", sans-serif;
+    margin-top: 2.5rem;
+  }
 }
 
-.team-text{
-    width: 80%;
+.team-text {
+  width: 80%;
 }
 
-.paragraph{
-    font-size: 1.7rem;
-    line-height: 1.5;
-    font-weight: 300;
+.paragraph {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  font-weight: 300;
 }
 
-.about{
+.about {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    &__content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  &__photo {
+    width: 55rem;
+    height: 30rem;
+  }
+
+  &__text {
+    width: 60%;
+
+    @media screen and (max-width: 56.25em) {
+      padding-bottom: 2rem;
     }
 
-    &__photo{
-        width: 55rem;
-        height: 30rem;
+    @media screen and (max-width: 37.5em) {
+      width: 75%;
     }
-
-    &__text{
-        width: 60%;
-
-        @media screen and (max-width: 56.25em){
-            padding-bottom: 2rem;
-        }
-
-        @media screen and (max-width: 37.5em){
-            width:75%;
-        }
-    }
+  }
 }
 
-.img{
-    &__container{
-        padding: 3rem;
-    }
+.img {
+  &__container {
+    padding: 3rem;
+  }
 }
 
 //FORM
 
-.contact{
+.contact {
+  &__form {
+    padding: 2rem;
+    text-align: left;
+    display: flex;
+    padding-bottom: 0;
 
-    &__form{
-        padding: 2rem;
-        text-align: left;
-        display: flex;
-        padding-bottom: 0;
-        
-        @media screen and (max-width:37.5em){
-            flex-direction: column;
-        }
+    @media screen and (max-width: 37.5em) {
+      flex-direction: column;
     }
+  }
 
-    &__button{
-        display: flex;
-        justify-content: center;
+  &__button {
+    display: flex;
+    justify-content: center;
 
-        &--btn{
-            padding: 1.5rem 2.5rem;
-            font-family: 'Nunito', sans-serif;
-            font-size: 1.8rem;
-            background-color: #2f80ed;
-            border: none;
-            margin-bottom: 2rem;
-            transition: all .2s;
+    &--btn {
+      padding: 1.5rem 2.5rem;
+      font-family: "Nunito", sans-serif;
+      font-size: 1.8rem;
+      background-color: #2f80ed;
+      border: none;
+      margin-bottom: 2rem;
+      transition: all 0.2s;
+      color: #fff;
 
-            &:hover{
-                cursor: pointer;
-                transform: translateY(-3px);
-            }
+      &:hover {
+        cursor: pointer;
+        transform: translateY(-3px);
+      }
 
-            &:active{
-                transform: translateY(3px);
-            }
-        }
+      &:active {
+        transform: translateY(3px);
+      }
     }
+  }
 }
 
-.form{
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
 
+  @media screen and (max-width: 56.25em) {
+    width: 100%;
+  }
+
+  &__group {
+    padding: 2rem 3rem;
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
 
-    @media screen and (max-width: 56.25em){
-        width: 100%;
+    &--message {
+      @media screen and (max-width: 37.5em) {
+        padding-top: 0;
+      }
     }
+  }
 
-    &__group{
-        padding: 2rem 3rem;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+  &__input {
+    height: 4rem;
+    order: 2;
+    text-indent: 0px;
+    text-align: start;
+    cursor: text;
+    font-size: 2rem;
+    text-indent: 3px;
 
-        &--message{
-            @media screen and (max-width:37.5em){
-                padding-top: 0;
-            }
-        }
+    &--message {
+      padding: 0 0 8rem 0;
+      font-family: inherit;
+      cursor: text;
+
+      @media screen and (max-width: 37.5em) {
+        margin-bottom: 1rem;
+      }
     }
+  }
 
-    &__input{
-        height: 4rem;
-        order: 2;
-        text-indent: 0px;
-        text-align: start;
-        cursor: text;
-        font-size: 2rem;
-        text-indent: 3px;
-
-        &--message{
-            padding: 0 0 8rem 0;
-            font-family: inherit;
-            cursor: text;
-
-            @media screen and (max-width:37.5em){
-                margin-bottom: 1rem;
-            }
-        }
-    }
-
-    &__label{
-        font-size: 1.6rem;
-        font-weight: 300;
-        padding-bottom: .8rem;
-        letter-spacing: .1rem;
-    }
+  &__label {
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-bottom: 0.8rem;
+    letter-spacing: 0.1rem;
+  }
 }
 
 //OFFERINGS
 
-.offerings{
-    &__img{
-        height: 70%;
-        width: 70%;
-    }
+.offerings {
+  &__img {
+    height: 70%;
+    width: 70%;
+  }
 }
