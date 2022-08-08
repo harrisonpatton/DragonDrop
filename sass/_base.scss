@@ -1,26 +1,26 @@
-:root{
-    --color-primary: #4E9F3D;
-    --color-primary-dark: #1E5128;
+:root {
+  --color-primary: #4e9f3d;
+  --color-primary-dark: #1e5128;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
-html{
-    box-sizing: border-box;
-    font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
-body{
-    background-color: #6FCF97;
+body {
+  background-color: #6fcf97;
 }

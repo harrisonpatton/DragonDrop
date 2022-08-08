@@ -1,6 +1,6 @@
 :root {
-  --color-primary: #4E9F3D;
-  --color-primary-dark: #1E5128; }
+  --color-primary: #4e9f3d;
+  --color-primary-dark: #1e5128; }
 
 * {
   margin: 0;
@@ -14,17 +14,24 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700; }
 
 body {
-  background-color: #6FCF97; }
+  background-color: #6fcf97; }
+
+.body--contact {
+  background-color: #f5f5f5; }
 
 .logo {
-  height: 8rem;
-  width: 16rem;
-  top: 4rem;
-  left: 4rem; }
+  width: 25%;
+  color: black;
+  padding-top: 4rem;
+  font-size: 5.5rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  margin-left: 12%; }
   .logo__box {
     padding: 2rem;
     margin-bottom: 2rem; }
@@ -34,10 +41,24 @@ body {
         width: 0;
         position: absolute; } }
 
+.icon {
+  display: inline-block;
+  width: 2rem;
+  stroke-width: 0;
+  stroke: currentColor; }
+  .icon:not(:last-child) {
+    margin-right: 1rem; }
+
 .heading-secondary {
+  font-family: "Nunito";
   font-size: 2.7rem;
-  font-weight: 300;
-  letter-spacing: .25rem; }
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  text-shadow: 2px 1px 2px gray; }
+  .heading-secondary--contact {
+    border-bottom-width: 1.5px;
+    padding-bottom: 0.8rem;
+    border-bottom-style: solid; }
 
 .content {
   display: flex;
@@ -48,12 +69,15 @@ body {
       order: 2; } }
   .content__header {
     display: flex;
-    justify-content: center;
-    margin-bottom: 5rem; }
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    background-color: #6fcf97; }
     @media screen and (max-width: 37.5em) {
       .content__header--about {
         visibility: hidden;
         position: absolute; } }
+    .content__header--contact {
+      background-color: #f5f5f5; }
   .content__body {
     display: flex;
     flex-direction: column;
@@ -73,7 +97,7 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      font-family: 'Roboto', sans-serif; }
+      font-family: "Roboto", sans-serif; }
   .content__photo {
     height: 16rem;
     width: 16rem;
@@ -87,12 +111,12 @@ body {
   text-decoration: underline;
   font-size: 2.7rem;
   font-weight: 300;
-  letter-spacing: .25rem; }
+  letter-spacing: 0.25rem; }
   @media screen and (max-width: 56.25em) {
     .team-heading {
       text-decoration: none;
       font-size: 4.5rem;
-      font-family: 'Nunito', sans-serif;
+      font-family: "Nunito", sans-serif;
       margin-top: 2.5rem; } }
 
 .team-text {
@@ -102,6 +126,9 @@ body {
   font-size: 1.7rem;
   line-height: 1.5;
   font-weight: 300; }
+  .paragraph--contact {
+    width: 80%;
+    padding-top: 2.3rem; }
 
 .about__content {
   display: flex;
@@ -137,13 +164,16 @@ body {
   display: flex;
   justify-content: center; }
   .contact__button--btn {
-    padding: 1.5rem 2.5rem;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.8rem;
-    background-color: #2f80ed;
+    padding: 0.5rem 8rem;
+    font-family: "Nunito", sans-serif;
+    font-size: 2.1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    background-color: black;
     border: none;
+    border-radius: 10px;
     margin-bottom: 2rem;
-    transition: all .2s;
+    transition: all 0.2s;
     color: #fff; }
     .contact__button--btn:hover {
       cursor: pointer;
@@ -173,7 +203,9 @@ body {
     text-align: start;
     cursor: text;
     font-size: 2rem;
-    text-indent: 3px; }
+    text-indent: 3px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px gray; }
     .form__input--message {
       padding: 0 0 8rem 0;
       font-family: inherit;
@@ -184,8 +216,8 @@ body {
   .form__label {
     font-size: 1.6rem;
     font-weight: 300;
-    padding-bottom: .8rem;
-    letter-spacing: .1rem; }
+    padding-bottom: 0.8rem;
+    letter-spacing: 0.1rem; }
 
 .offerings__img {
   height: 70%;
@@ -204,28 +236,38 @@ body {
   margin-bottom: 8rem; }
 
 .container {
-  background-color: #6FCF97;
+  background-color: #6fcf97;
   height: 100vh;
   position: relative;
   display: flex; }
+  .container--contact {
+    background-color: #f5f5f5; }
 
 .header {
   color: black;
   padding: 2rem;
   padding-top: 4rem;
   font-size: 5.5rem;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 500;
-  letter-spacing: .3rem; }
+  letter-spacing: 0.3rem;
+  background-color: #6fcf97; }
   @media screen and (max-width: 56.25em) {
     .header {
       font-size: 7rem; } }
+  .header--contact {
+    background-color: #f5f5f5;
+    font-weight: 500; }
+
+.social {
+  margin-left: auto;
+  margin-right: 10%; }
+  .social--contact {
+    margin-left: 0;
+    margin-right: 0; }
 
 .full__content {
-  display: flex;
-  flex-direction: column;
-  width: 75%;
-  margin-left: 25%; }
+  display: flex; }
   @media screen and (max-width: 56.25em) {
     .full__content {
       margin: auto;
@@ -267,12 +309,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: transparent;
   margin: 0 2rem;
   margin-left: 4rem;
-  margin-top: 4rem;
-  background-color: transparent;
-  width: 25%;
-  position: fixed; }
+  margin-top: 4rem; }
   @media (max-width: 56.25em) {
     .navigation__container {
       opacity: 0;
@@ -281,24 +321,24 @@ body {
       justify-content: center; } }
 
 .navigation__nav {
-  padding: .8rem 1.7rem;
+  padding: 0.8rem 1.7rem;
   border-radius: 3px; }
 
 .navigation__item {
-  padding: 1.3rem .5rem;
-  padding-bottom: .6rem;
+  padding: 1.3rem 0.5rem;
+  padding-bottom: 0.6rem;
   font-size: 3.5rem;
   font-weight: 300;
-  letter-spacing: .25rem;
+  letter-spacing: 0.25rem;
   position: relative; }
   @media (max-width: 56.25em) {
     .navigation__item {
-      padding: 2.6rem .4rem;
+      padding: 2.6rem 0.4rem;
       font-size: 4.5rem;
-      letter-spacing: .4rem; } }
+      letter-spacing: 0.4rem; } }
   @media (max-width: 37.5em) {
     .navigation__item {
-      padding: 2.6rem .4rem;
+      padding: 2.6rem 0.4rem;
       font-size: 4rem; } }
 
 .navigation__item::before {
@@ -320,10 +360,10 @@ body {
   list-style: none; }
 
 .navigation__link, .navigation:link, .navigation:visited {
-  padding: .5rem;
+  padding: 0.5rem;
   text-decoration: none;
   color: black;
-  transition: all .2s; }
+  transition: all 0.2s; }
   @media (max-width: 56.25em) {
     .navigation__link, .navigation:link, .navigation:visited {
       color: #fff; } }
@@ -361,11 +401,11 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    transition: all .4s; }
+    transition: all 0.4s; }
   .navigation__icon::before {
-    top: -.8rem; }
+    top: -0.8rem; }
   .navigation__icon::after {
-    top: .8rem; }
+    top: 0.8rem; }
 
 .navigation__checkbox:checked ~ .navigation__button .navigation__icon::before {
   top: 0;
