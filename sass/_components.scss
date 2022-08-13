@@ -1,6 +1,5 @@
 .logo {
   color: black;
-  padding-top: 4rem;
   font-size: 5.5rem;
   font-family: "Nunito", sans-serif;
   font-weight: 500;
@@ -60,6 +59,7 @@
     margin-bottom: 5rem;
     background-color: #6fcf97;
     grid-column: 1/-1;
+    align-items: center;
 
     &--about {
       @media screen and (max-width: 37.5em) {
@@ -221,7 +221,6 @@
 .form {
   display: flex;
   flex-direction: column;
-  width: 80%;
 
   @media screen and (max-width: 56.25em) {
     width: 100%;
