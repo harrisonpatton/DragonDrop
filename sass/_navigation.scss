@@ -1,4 +1,5 @@
 .navigation {
+  margin-left: 20%;
   &__checkbox {
     display: none;
     width: 0;
@@ -49,10 +50,16 @@
   &__item {
     padding: 1.3rem 0.5rem;
     padding-bottom: 0.6rem;
-    font-size: 3.5rem;
-    font-weight: 300;
+    text-transform: uppercase;
+    font-family: "Nunito", sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
     letter-spacing: 0.25rem;
     position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
 
     @include respond(tab-port) {
       padding: 2.6rem 0.4rem;
@@ -86,6 +93,9 @@
   }
 
   &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style: none;
   }
 
