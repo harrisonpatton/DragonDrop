@@ -129,6 +129,13 @@
   border-bottom-width: 1.5px;
   padding-bottom: 1rem;
   border-bottom-style: solid;
+
+  &--mission {
+    grid-column: 1/-1;
+    margin-bottom: 5%;
+    display: flex;
+    justify-self: center;
+  }
 }
 
 .team-heading {
@@ -188,6 +195,11 @@
 .img {
   &__container {
     padding: 3rem;
+  }
+
+  &__mission {
+    height: 13rem;
+    width: 23rem;
   }
 }
 

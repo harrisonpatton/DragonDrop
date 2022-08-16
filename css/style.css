@@ -116,6 +116,11 @@ body {
   border-bottom-width: 1.5px;
   padding-bottom: 1rem;
   border-bottom-style: solid; }
+  .heading-secondary--mission {
+    grid-column: 1/-1;
+    margin-bottom: 5%;
+    display: flex;
+    justify-self: center; }
 
 .team-heading {
   text-decoration: underline;
@@ -160,6 +165,10 @@ body {
 
 .img__container {
   padding: 3rem; }
+
+.img__mission {
+  height: 13rem;
+  width: 23rem; }
 
 .contact__form {
   padding: 2rem;
@@ -301,6 +310,14 @@ body {
   @media screen and (max-width: 37.5em) {
     .full__content {
       width: 90%; } }
+
+.our-mission {
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  grid-template-rows: min-content min-content;
+  grid-column-gap: 5%;
+  margin-bottom: 10%;
+  justify-content: center; }
 
 .row {
   display: flex; }

@@ -72,6 +72,15 @@
   }
 }
 
+.our-mission {
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  grid-template-rows: min-content min-content;
+  grid-column-gap: 5%;
+  margin-bottom: 10%;
+  justify-content: center;
+}
+
 .row {
   display: flex;
 
