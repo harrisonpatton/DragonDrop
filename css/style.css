@@ -61,6 +61,8 @@ body {
         position: absolute; } }
     .content__header--contact {
       background-color: #f5f5f5; }
+    .content__header--offerings {
+      background-color: #beb7df; }
   .content__body {
     display: flex;
     flex-direction: column;
@@ -69,9 +71,9 @@ body {
       .content__body--contact {
         width: auto; } }
   .content__body-employee {
-    padding: 5rem;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-top: 5%; }
     @media screen and (max-width: 37.5em) {
       .content__body-employee {
         flex-direction: column;
@@ -80,10 +82,11 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      font-family: "Roboto", sans-serif; }
+      font-family: "Roboto", sans-serif;
+      padding-left: 4rem; }
   .content__photo {
-    height: 16rem;
-    width: 16rem;
+    height: 22rem;
+    width: 22rem;
     border-radius: 50%;
     object-fit: cover; }
     @media screen and (max-width: 37.5em) {
@@ -109,7 +112,7 @@ body {
 
 .heading-secondary {
   font-family: "Nunito";
-  font-size: 2.7rem;
+  font-size: 3.5rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
   text-shadow: 2px 1px 2px gray;
@@ -121,6 +124,12 @@ body {
     margin-bottom: 5%;
     display: flex;
     justify-self: center; }
+
+.heading-tertiary {
+  font-size: 2.7rem;
+  margin-bottom: 5%;
+  align-self: flex-start;
+  text-shadow: 2px 1px 2px gray; }
 
 .team-heading {
   text-decoration: underline;
@@ -134,9 +143,6 @@ body {
       font-family: "Nunito", sans-serif;
       margin-top: 2.5rem; } }
 
-.team-text {
-  width: 80%; }
-
 .paragraph {
   font-size: 1.7rem;
   line-height: 1.5;
@@ -145,10 +151,15 @@ body {
     width: 80%;
     padding-top: 2.3rem; }
 
+.mission-text {
+  grid-column: 1/4;
+  margin-top: 5%; }
+
 .about__content {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-top: 5%; }
 
 .about__photo {
   width: 55rem;
@@ -258,9 +269,10 @@ body {
   grid-row-gap: 5%; }
   .body--contact {
     background-color: #f5f5f5; }
+  .body__offerings {
+    background-color: #beb7df; }
 
 .container {
-  background-color: #6fcf97;
   height: 100vh;
   position: relative;
   display: flex; }
@@ -281,7 +293,6 @@ body {
   font-family: "Nunito", sans-serif;
   font-weight: 500;
   letter-spacing: 0.3rem;
-  background-color: #6fcf97;
   font-weight: 500;
   grid-column: 2/3;
   display: flex;
