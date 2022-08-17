@@ -173,6 +173,10 @@
     width: 80%;
     padding-top: 2.3rem;
   }
+
+  &--offerings {
+    line-height: normal;
+  }
 }
 
 .mission-text {
@@ -310,9 +314,46 @@
 
 //OFFERINGS
 
-.offerings {
-  &__img {
-    height: 70%;
-    width: 70%;
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+//TESTIMONIALS
+
+.reviews {
+  display: flex;
+  align-items: center;
+
+  &__title {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  &__text {
+    line-height: normal;
+  }
+  &__dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 11rem;
+    width: 11rem;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: -8rem;
+    margin-right: -12rem;
+    color: #fff;
+    font-size: 5rem;
+    text-align: center;
+  }
+  &__testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:not(:last-child) {
+      margin-right: 8rem;
+    }
   }
 }

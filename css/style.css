@@ -150,6 +150,8 @@ body {
   .paragraph--contact {
     width: 80%;
     padding-top: 2.3rem; }
+  .paragraph--offerings {
+    line-height: normal; }
 
 .mission-text {
   grid-column: 1/4;
@@ -246,9 +248,39 @@ body {
     padding-bottom: 0.8rem;
     letter-spacing: 0.1rem; }
 
-.offerings__img {
-  height: 70%;
-  width: 70%; }
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.reviews {
+  display: flex;
+  align-items: center; }
+  .reviews__title {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem; }
+  .reviews__text {
+    line-height: normal; }
+  .reviews__dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 11rem;
+    width: 11rem;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: -8rem;
+    margin-right: -12rem;
+    color: #fff;
+    font-size: 5rem;
+    text-align: center; }
+  .reviews__testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .reviews__testimonial:not(:last-child) {
+      margin-right: 8rem; }
 
 .u-margin-small {
   margin-bottom: 2rem; }
@@ -271,6 +303,10 @@ body {
     background-color: #f5f5f5; }
   .body__offerings {
     background-color: #beb7df; }
+  .body__portfolio {
+    background-color: #f5b700; }
+  .body__testimonials {
+    background-color: #e9d2f4; }
 
 .container {
   height: 100vh;
@@ -307,13 +343,18 @@ body {
       font-size: 7rem; } }
   .header--contact {
     background-color: #f5f5f5; }
+  .header--testimonials {
+    margin-left: 18%;
+    padding: 1rem 9rem; }
 
 .full__content {
   display: flex;
   flex-direction: column;
   grid-column: 2/3;
   margin-left: 20%;
-  margin-top: 2%; }
+  margin-top: 2%;
+  align-items: center;
+  margin-bottom: 5rem; }
   @media screen and (max-width: 56.25em) {
     .full__content {
       margin: auto;
@@ -321,6 +362,8 @@ body {
   @media screen and (max-width: 37.5em) {
     .full__content {
       width: 90%; } }
+  .full__content--testimonials {
+    margin-left: 18%; }
 
 .our-mission {
   display: grid;
@@ -337,6 +380,21 @@ body {
     flex-direction: column;
     align-items: center;
     flex: 1; }
+    .row__content:not(:last-child) {
+      margin-right: 10%; }
+  .row:not(:last-child) {
+    margin-bottom: 5%; }
+
+.gallery {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 20vw);
+  grid-column-gap: 5rem;
+  grid-row-gap: 8rem; }
+  .gallery__img {
+    height: 30rem;
+    width: 45rem; }
 
 .navigation {
   margin-left: 20%; }
