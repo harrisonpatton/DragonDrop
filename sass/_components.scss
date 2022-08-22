@@ -11,6 +11,23 @@
   justify-self: center;
   align-self: center;
 
+  @media screen and (max-width: 56.25em) {
+    font-size: 5.5rem;
+  }
+  @media screen and (max-width: 41.25em) {
+    font-size: 5rem;
+    margin-right: 15%;
+  }
+
+  @media screen and (max-width: 36.25em) {
+    grid-row: 1/2;
+    font-size: 6rem;
+  }
+
+  @media screen and (max-width: 27.5em) {
+    margin-left: 70%;
+  }
+
   &__box {
     padding: 2rem;
     margin-bottom: 2rem;
@@ -93,7 +110,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     @media screen and (max-width: 37.5em) {
-      margin-bottom: 3rem;
+      margin-bottom: 5rem;
     }
   }
 }
@@ -105,9 +122,14 @@
   display: flex;
   justify-self: center;
   align-self: center;
+  margin-right: 30%;
 
   &--contact {
     margin-right: 0;
+  }
+
+  @media screen and (max-width: 56.25em) {
+    display: none;
   }
 }
 
@@ -317,8 +339,15 @@
 //TESTIMONIALS
 
 .reviews {
-  display: flex;
+  display: grid;
   align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10%;
+
+  @media screen and (max-width: 50em) {
+    display: flex;
+    flex-direction: column;
+  }
 
   &__title {
     font-size: 1.7rem;
@@ -327,6 +356,26 @@
   }
   &__text {
     line-height: normal;
+  }
+  &__photo {
+    height: 22rem;
+    width: 22rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media screen and (max-width: 62.5em) {
+      height: 20rem;
+      width: 20rem;
+    }
+    @media screen and (max-width: 50em) {
+      height: 18rem;
+      width: 18rem;
+    }
+
+    @media screen and (max-width: 37.5em) {
+      margin-bottom: 5rem;
+    }
   }
   &__dot {
     display: flex;
@@ -347,8 +396,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    &:not(:last-child) {
-      margin-right: 8rem;
+    @media screen and (max-width: 50em) {
+      &:not(:last-child) {
+        margin-bottom: 5%;
+      }
     }
   }
 }
