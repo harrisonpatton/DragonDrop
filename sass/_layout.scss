@@ -70,6 +70,9 @@
     padding: 1rem 6rem;
   }
   &--portfolio {
+    @media screen and (max-width: 62.5em) {
+      padding: 1rem 6rem;
+    }
     @media screen and (max-width: 56.25em) {
       padding: 1rem 4rem;
     }
@@ -79,6 +82,9 @@
   }
 
   &--offerings {
+    @media screen and (max-width: 62.5em) {
+      padding: 1rem 6rem;
+    }
     @media screen and (max-width: 56.25em) {
       padding: 1rem 4rem;
     }
@@ -87,6 +93,7 @@
     }
   }
   &--testimonials {
+    padding: 1rem 9rem;
     @media screen and (max-width: 62.5em) {
       padding: 1rem 2rem;
     }
@@ -166,6 +173,11 @@
   grid-template-rows: repeat(2, 20vw);
   grid-column-gap: 5vw;
   grid-row-gap: 5vh;
+
+  @media screen and (max-width: 37.5em) {
+    display: flex;
+    flex-direction: column;
+  }
 
   &__img {
     height: 100%;

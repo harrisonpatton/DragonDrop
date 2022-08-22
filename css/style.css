@@ -40,7 +40,7 @@ body {
   @media screen and (max-width: 36.25em) {
     .logo {
       grid-row: 1/2;
-      font-size: 6rem; } }
+      margin-left: 40%; } }
   @media screen and (max-width: 27.5em) {
     .logo {
       margin-left: 70%; } }
@@ -110,7 +110,7 @@ body {
   display: flex;
   justify-self: center;
   align-self: center;
-  margin-right: 30%; }
+  margin-right: 50%; }
   .social--contact {
     margin-right: 0; }
   @media screen and (max-width: 56.25em) {
@@ -391,24 +391,32 @@ body {
     .header {
       grid-row: 2/3;
       padding: 1rem 6rem; } }
+  @media screen and (max-width: 62.5em) {
+    .header--portfolio {
+      padding: 1rem 6rem; } }
   @media screen and (max-width: 56.25em) {
     .header--portfolio {
       padding: 1rem 4rem; } }
   @media screen and (max-width: 26.25em) {
     .header--portfolio {
-      font-size: 3.5rem; } }
-  @media screen and (max-width: 56.25em) {
-    .header--offerings {
-      padding: 1rem 4rem; } }
-  @media screen and (max-width: 26.25em) {
-    .header--offerings {
       font-size: 3.5rem; } }
   @media screen and (max-width: 62.5em) {
-    .header--testimonials {
-      padding: 1rem 2rem; } }
-  @media screen and (max-width: 27.5em) {
-    .header--testimonials {
-      font-size: 3rem; } }
+    .header--offerings {
+      padding: 1rem 6rem; } }
+  @media screen and (max-width: 56.25em) {
+    .header--offerings {
+      padding: 1rem 4rem; } }
+  @media screen and (max-width: 26.25em) {
+    .header--offerings {
+      font-size: 3.5rem; } }
+  .header--testimonials {
+    padding: 1rem 9rem; }
+    @media screen and (max-width: 62.5em) {
+      .header--testimonials {
+        padding: 1rem 2rem; } }
+    @media screen and (max-width: 27.5em) {
+      .header--testimonials {
+        font-size: 3rem; } }
   @media screen and (max-width: 26.25em) {
     .header--contact {
       font-size: 3.5rem; } }
@@ -465,6 +473,10 @@ body {
   grid-template-rows: repeat(2, 20vw);
   grid-column-gap: 5vw;
   grid-row-gap: 5vh; }
+  @media screen and (max-width: 37.5em) {
+    .gallery {
+      display: flex;
+      flex-direction: column; } }
   .gallery__img {
     height: 100%;
     width: 100%;
@@ -560,7 +572,8 @@ body {
   @media (max-width: 37.5em) {
     .navigation__item {
       padding: 2.6rem 0.4rem;
-      padding-bottom: 0; } }
+      padding-bottom: 0;
+      font-size: 4rem; } }
 
 .navigation__item::before {
   content: "";
