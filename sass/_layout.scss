@@ -25,6 +25,7 @@
     grid-template-rows: min-content;
     grid-template-columns: 25vw 65vw 10vw;
     padding-top: 2rem;
+    margin-bottom: 3%;
     @media screen and (max-width: 56.25em) {
       grid-template-columns: 20vw 60vw 20vw;
     }

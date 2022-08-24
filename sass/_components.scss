@@ -124,12 +124,16 @@
   align-self: center;
   margin-right: 50%;
 
-  &--contact {
-    margin-right: 0;
+  @media screen and (max-width: 56.25em) {
+    visibility: hidden;
   }
 
-  @media screen and (max-width: 56.25em) {
-    display: none;
+  &--contact {
+    margin-right: 0;
+    padding-top: 5%;
+    @media screen and (max-width: 56.25em) {
+      visibility: visible;
+    }
   }
 }
 
@@ -138,6 +142,31 @@
   width: 2rem;
   stroke-width: 0;
   stroke: currentColor;
+
+  &-facebook {
+    background-image: url(../img/SVG/facebook.svg);
+    background-size: cover;
+    color: transparent;
+    height: 2rem;
+  }
+  &-twitter {
+    background-image: url(../img/SVG/twitter.svg);
+    background-size: cover;
+    color: transparent;
+    height: 2rem;
+  }
+  &-paper-plane {
+    background-image: url(../img/SVG/paper-plane.svg);
+    background-size: cover;
+    color: transparent;
+    height: 2rem;
+  }
+  &-instagram {
+    background-image: url(../img/SVG/instagram.svg);
+    background-size: cover;
+    color: transparent;
+    height: 2rem;
+  }
 
   &:not(:last-child) {
     margin-right: 1rem;

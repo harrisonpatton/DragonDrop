@@ -20,15 +20,16 @@
     border-radius: 50%;
 
     @include respond(tab-port) {
-      top: -8rem;
+      top: -10rem;
       right: 3rem;
       visibility: visible;
     }
-
-    @include respond(phone) {
-      top: -18rem;
+    @media screen and (max-width: 37.25em) {
+      top: -20rem;
     }
-
+    @media screen and (max-width: 36.25em) {
+      right: 3rem;
+    }
     @media screen and (max-width: 36.25em) {
       right: 3rem;
     }
@@ -105,7 +106,7 @@
     @include respond(phone) {
       padding: 2.6rem 0.4rem;
       padding-bottom: 0;
-      font-size: 4rem;
+      font-size: 3.4rem;
     }
   }
 
@@ -154,17 +155,17 @@
   &__checkbox:checked ~ &__container {
     @include respond(tab-port) {
       opacity: 1;
-      width: 40vw;
+      width: 41vw;
       background-color: black;
       margin: 0;
-      margin-top: -11.7rem;
+      margin-top: -15rem;
       margin-left: 62%;
       z-index: 200;
       position: absolute;
     }
 
     @include respond(phone) {
-      margin-top: -21.9rem;
+      margin-top: -24rem;
       margin-left: 0;
       width: 100%;
     }
